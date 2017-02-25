@@ -3,15 +3,21 @@
 
   "name": "Hate2Hugs",
   "description": "This extension replaces hate speech with positivity.",
-  "version": "0.0.1",
+  "version": "0.0.3",
 
   "browser_action": {
     "default_icon": "smile.png",
     "default_popup": "popup.html",
-	"default_title": "Click here!"
   },
-  "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+  "content_scripts": [
+    {
+	  "matches": [
+		"<all_urls>"
+	  ],
+	  "js": ["server.js"]
+	  "js": ["textput.js"]
+	  }
+	]	
+		
+
 }

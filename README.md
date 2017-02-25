@@ -1,4 +1,4 @@
-node-web-scraper
+java-web-parser
 ================
 
-Simple web scraper to get a movie name, release year and community rating from IMDB.
+Simple web parser
